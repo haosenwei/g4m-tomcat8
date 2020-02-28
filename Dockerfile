@@ -3,7 +3,7 @@ FROM huyisheng/g4m-jre8:latest
 # author
 MAINTAINER haosenwei
 # A streamlined jre
-ADD tomcat8.tar.gz /g4m/tomcat/
+ADD . /g4m/tomcat/
 
 EXPOSE 8080
 
