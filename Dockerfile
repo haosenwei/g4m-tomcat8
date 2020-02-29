@@ -3,7 +3,8 @@ FROM huyisheng/g4m-jre8:latest
 # author
 MAINTAINER haosenwei
 # A streamlined jre
-ADD . /g4m/tomcat/
+ADD start.sh /g4m/tomcat/
+ADD tomcat8.tar.gz /g4m/tomcat/
 
 EXPOSE 8080
 
@@ -11,4 +12,4 @@ EXPOSE 8080
 WORKDIR /g4m/tomcat
 
 
-# CMD ["sh","start.sh"]
+CMD ["sh","start.sh"]
