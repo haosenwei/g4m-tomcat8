@@ -3,13 +3,13 @@ FROM registry.cn-beijing.aliyuncs.com/haosenwei/g4m-jre8:latest
 # author
 MAINTAINER haosenwei
 # A streamlined jre
-ADD start.sh /g4m/tomcat/
-ADD tomcat8.tar.gz /g4m/tomcat/
+ADD start.sh /workspace/tomcat/
+ADD tomcat8.tar.gz /workspace/tomcat/
 
 EXPOSE 8080
 
 # run container with base path:/opt
-WORKDIR /g4m/tomcat
+WORKDIR /workspace/tomcat
 
 
 CMD ["sh","start.sh"]
